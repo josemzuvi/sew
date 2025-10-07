@@ -1,0 +1,48 @@
+/* José Martínez de Zuvillaga UO294061 */
+/* Layout general del proyecto MotoGP-Desktop */
+
+/* Especificidad: 0,0,1 */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Especificidad: 0,0,1 */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 2ex;
+}
+
+/* Especificidad: 0,0,1 */
+video, audio {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 799px) {
+
+    /* Especificidad: 0,0,1 */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    
+    /* Especificidad: 0,0,1 */
+    nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 1ex;
+    }
+
+    /* Especificidad: 0,0,2(header + p)*/
+    header + p {
+        display: none;
+    }
+}

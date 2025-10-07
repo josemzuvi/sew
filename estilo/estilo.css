@@ -1,0 +1,95 @@
+/* José Martínez de Zuvillaga UO294061 */
+/* Estilos generales del proyecto MotoGP-Desktop */
+
+/* Tipografía general en body */
+/* Especificidad: 0,0,1 */
+body {
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode",
+    "Lucida Sans", Tahoma, sans-serif;
+  font-style: normal;
+  font-variant: normal;
+  line-height: 1.5;
+  font-size: 1rem;
+
+  background-color: #F5F4EF;
+  color: #323334;
+}
+
+/* Fondo del encabezado */
+/* Especificidad: 0,0,1 */
+header {
+  background-color: #DAD0E2;
+  color: #2C5645;
+
+  padding: 0 2ex;
+}
+
+/* Enlaces dentro de nav */
+/* Especificidad: 0,0,2 (header + a) */
+header a {
+  color: #695A00;
+  /* Background-color heredado de header */
+  text-decoration-line: none;
+}
+
+/* Enlaces al pasar el ratón */
+/* Especificidad: 0,0,2 */
+header a:hover{
+  color: #396F5A;
+  /* Background-color heredado de header */
+}
+
+/* Nav de l página */
+/* Especifidad: 0,0,1 */
+nav {
+  padding: 1ex 0;
+}
+
+/* Titulo y subtitulos h1 h2 h3 */
+/* Especificidad: 0,0,1 */
+h1, h2, h3 {
+  line-height: 1.4;
+  color: #647C90;
+  /* Background-color heredado de body o header */
+}
+
+/* Titulo h1 */
+/* Especificidad: 0,0,1 */
+h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+/* Subtítulo h2 */
+/* Especificidad: 0,0,1 */
+h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+/* Subtítulo h3 */
+/* Especificidad: 0,0,1 */
+h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+/* Párrafos */
+/* Especificidad: 0,0,1 */
+p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Especifidad: 0,1,0 */
+.active {
+  font-weight: bold;
+  color: #1a354b;
+  /* Background-color heredado de header */
+}
+
+/* Especifidad: 0,0,2 (header+p)*/
+header + p {
+  font-size: 0.8em;
+}
