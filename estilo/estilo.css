@@ -49,7 +49,7 @@ nav {
 /* Especificidad: 0,0,1 */
 h1, h2, h3 {
   line-height: 1.4;
-  color: #647C90;
+  color: #617282;
   /* Background-color heredado de body o header */
 }
 
@@ -92,4 +92,5 @@ p {
 /* Especifidad: 0,0,2 (header+p)*/
 header + p {
   font-size: 0.8em;
+
 }
